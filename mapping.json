@@ -1,0 +1,27 @@
+﻿{
+  "settings": {
+    "index": {
+      "knn": true
+    }
+  },
+  "mappings": {
+    "properties": {
+      "content": {
+        "type": "text"
+      },
+      "content_type": {
+        "type": "keyword"
+      },
+      "token_count": {
+        "type": "integer"
+      },
+      "filename": {
+        "type": "keyword"
+      },
+      "embedding": {
+        "type": "knn_vector",
+        "dimension": 768
+      }
+    }
+  }
+}
